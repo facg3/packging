@@ -23,13 +23,11 @@ Interactively create a package.json file
 ## How do you use an installed package in your code?  
 <code>npm install <pakagename> --save</code>  
  ## locally install   
-command line :: npm install <package>  
-…..
+<code>npm install <packagename>  </code>  
 1.This package/module will find on your local node_modules folder and can only be usable for this project.  
 2.This package/module can be accessible in using require("package") from code.  
 const module = require('module');  
-3.This package/module can't be accessible in command line interface
-…………………
+3.This package/module can't be accessible in command line interface  
 ## Globally install:  
 command line:: npm install <package> -g
 Global modules are mostly tools like nodmon or any other module you use in your daily work  
@@ -42,10 +40,10 @@ devDependencies only to develop , npm install "$package" –-save-dev
 the command line tools are versioned. If your local/development machine has a different version of the tool than another machine that needs to run that tool for that project, then there could be incompatibilities.to solve it you should include your development tools in devDependencies in package.json. That way they can be versioned for each project
 The first thing you need to do is remove that -g when you install modules. You should replace that with --save-dev so you can save the module as a development dependency and it will always be installed  
 ## 1.Where does NPM install packages? 
-A package can be downloaded with the command:  
-npm install <package_name>  
-This will create the node_modules directory in your current directory (if one doesn't exist yet) and will download the package to that directory….  
-To confirm that npm install worked correctly, check to see that a node_modules directory exists and that it contains a directory for the package(s) you installed. You can do this by running (ls node_modules)   
+A package can be downloaded with the command:
+npm install <package_name>
+This will create the node_modules directory in your current directory (if one doesn't exist yet) and will download the package to that directory….
+To confirm that npm install worked correctly, check to see that a node_modules directory exists and that it contains a directory for the package(s) you installed. You can do this by running (ls node_modules) 
 
 ## 2.Why is it important to make sure that installed packages aren't included in your repositories?    
 you don't need to add the package in your repositeries and take a big space in it and these pkgs is already exist.
