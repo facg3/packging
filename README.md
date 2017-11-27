@@ -42,10 +42,10 @@ devDependencies only to develop , npm install "$package" –-save-dev
 the command line tools are versioned. If your local/development machine has a different version of the tool than another machine that needs to run that tool for that project, then there could be incompatibilities.to solve it you should include your development tools in devDependencies in package.json. That way they can be versioned for each project
 The first thing you need to do is remove that -g when you install modules. You should replace that with --save-dev so you can save the module as a development dependency and it will always be installed  
 ## 1.Where does NPM install packages? 
-A package can be downloaded with the command:
-npm install <package_name>
-This will create the node_modules directory in your current directory (if one doesn't exist yet) and will download the package to that directory….
-To confirm that npm install worked correctly, check to see that a node_modules directory exists and that it contains a directory for the package(s) you installed. You can do this by running (ls node_modules) 
+A package can be downloaded with the command:  
+npm install <package_name>  
+This will create the node_modules directory in your current directory (if one doesn't exist yet) and will download the package to that directory….  
+To confirm that npm install worked correctly, check to see that a node_modules directory exists and that it contains a directory for the package(s) you installed. You can do this by running (ls node_modules)   
 
 ## 2.Why is it important to make sure that installed packages aren't included in your repositories?    
 you don't need to add the package in your repositeries and take a big space in it and these pkgs is already exist.
